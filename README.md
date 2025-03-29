@@ -52,7 +52,10 @@ The primitives are flexible and can be integrated into different activities, mak
  - Execute SELCompiler with the appropriate command. This will compile and run the SEL code.
 
 ### 6. Specify the Script Location: 
-- Enter the URL for the location of the SEL script. This is the path where your script is located.
+- Enter the URL for the location of the SEL script. This is the path where your script is located.  
+   - If the URL is long or contains multiple folders, make sure to use `\` to separate directories properly.
+   -Verify the same formatting for the video URL in the script.
+
 <br>
 <img src="img/name.PNG" alt="" width="200"/>
 
