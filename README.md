@@ -1,4 +1,4 @@
-# State-Based Language (SEL): odelling Activities through SEL in Complex Scenarios
+# State-Based Language (SEL): Modelling Activities through SEL in Complex Scenarios
 
 ## Overview
 
