@@ -121,26 +121,26 @@ The primitives are flexible and can be integrated into different activities, mak
 ## **4. Model Activities**
 - Specify the actions and behaviors to be monitored.
   ```text
-      seq(A,B,C,D);  %DirectRoute
-      par(A,E);      %MotionTwoFronts
-      con(D,E)       %BusyZone
+    seq(A,B,C);%DirectRoute
+    seq(C,B,A);%InverseRoute
+    par(A,E);%MotionTwoFronts;
+    con(D,E);%BusyZone;
 ## **5. Create Script**
   ```text
 
 example.sel
 
 module example;
-export "example.mp4";
-  state A=[(4,1),(5,1),(5,2),(4,2),(5,3),(4,4),(5,4),(4,3)];
-  state B=[(4,5),(5,5),(5,6),(4,6),(4,7),(5,7)];
-  state C=[(4,8),(4,9),(5,9),(5,8),(3,9),(3,11),(4,10),(3,10),(5,10),(5,11),(4,11),(3,12),(4,12),(5,12)];
-  state D=[(3,13),(5,13),(4,13),(3,14),(4,14),(5,14),(5,15),(3,15),(3,16),(4,16),(5,16)];
-  state E=[(6,12),(6,13),(7,12),(8,12),(9,12),(8,13),(9,13),(7,13),(7,14),(6,14),(8,14),(9,14),(9,15),(7,15),(6,15),(8,15)];
-
-  begin;
-      seq(A,B,C,D);  %DirectRoute
-      par(A,E);      %MotionTwoFronts
-      con(D,E)       %BusyZone
-  end;
-
+export "video.mp4";
+state A=[(4,1),(5,1),(5,2),(4,2),(5,3),(4,4),(5,4),(4,3)];
+state B=[(4,5),(5,5),(5,6),(4,6),(4,7),(5,7)];
+state C=[(4,8),(4,9),(5,9),(5,8),(3,9),(3,11),(4,10),(3,10),(5,10),(5,11),(4,11),(3,12),(4,12),(5,12)];
+state D=[(3,13),(5,13),(4,13),(3,14),(4,14),(5,14),(5,15),(3,15),(3,16),(4,16),(5,16)];
+state E=[(6,12),(6,13),(7,12),(8,12),(9,12),(8,13),(9,13),(7,13),(7,14),(6,14),(8,14),(9,14),(9,15),(7,15),(6,15),(8,15)];
+begin;
+seq(A,B,C);%DirectRoute
+seq(C,B,A);%InverseRoute
+par(A,E);%MotionTwoFronts;
+con(D,E);%BusyZone;
+end;
 
