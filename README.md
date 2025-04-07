@@ -126,6 +126,11 @@ The primitives are flexible and can be integrated into different activities, mak
     par(A,E);%MotionTwoFronts;
     con(D,E);%BusyZone;
 ## **5. Create Script**
+Note: Make sure to update the file path in the following line:
+export "URL\GitHub\SemanticEventLanguage\Example\video.mp4";
+Replace "URL\GitHub\SemanticEventLanguage\Example\video.mp4" with the correct local path on your machine.
+
+
   ```text
 
 example.sel
@@ -144,6 +149,3 @@ par(A,E);%MotionTwoFronts;
 con(D,E);%BusyZone;
 end;
 
-Note: Make sure to update the file path in the following line:
-export "URL\GitHub\SemanticEventLanguage\Example\video.mp4";
-Replace "URL\GitHub\SemanticEventLanguage\Example\video.mp4" with the correct local path on your machine.
