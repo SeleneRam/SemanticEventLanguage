@@ -38,6 +38,7 @@
     partes = strsplit(url, '\');
     url = strjoin(partes(1:end-1), '\');
     url=[url,'\'];
+
     video = VideoReader(videoname);
     matriz = AFD;
     actual = double(rgb2gray(readFrame(video)));

@@ -49,8 +49,6 @@ punto=valor;
 [comillas2, tipo, programa]=parse(programa);
 texto=strcat (nombre, extension);
 
-
-
 if(strcmpi(comillas,'"')==0)
   error('-Error: -%s- line:%d', comillas, linea);
 end
