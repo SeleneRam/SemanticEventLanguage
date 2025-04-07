@@ -1,4 +1,4 @@
-# State-Based Language (SEL): Modeling for Dynamic Activity Detection Across Different Scenarios
+# State-Based Language (SEL): odelling Activities through SEL in Complex Scenarios
 
 ## Overview
 
