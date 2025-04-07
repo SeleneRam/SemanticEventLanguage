@@ -1,3 +1,6 @@
+% -*- octave -*-
+% This script associates each modeled activity type with a defined name
+% based on the movement primitives, and returns a unique identifier for each activity.
 function id = FnIDestado(name)
   global estados;
   global tamEstados;

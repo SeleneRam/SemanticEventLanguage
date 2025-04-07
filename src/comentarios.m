@@ -1,3 +1,5 @@
+% -*- octave -*-
+% This function checks if a given string contains comments.
 function programa=comentarios(programa)
 p=programa;
 [val, ~, programa]=parse(programa);

@@ -1,3 +1,6 @@
+
+% -*- octave -*-
+% This script obtains the values of each state and returns the remaining text in the script.
 function programa=fnVariableTipoOperacion(sivar,programa)
 global estados;
 global string;
@@ -43,7 +46,6 @@ else
         variable.id=nombrevar;
         variable.tipo=sivar;
         variable.valor=0;
-
         estados=[estados; variable];
 
     end
@@ -51,3 +53,4 @@ end
 
 
 end
+

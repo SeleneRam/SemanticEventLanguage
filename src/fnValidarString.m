@@ -1,3 +1,5 @@
+% -*- octave -*-
+%This function validates the correct name of a variablez
 function [programa, valor]=fnValidarString(programa)
 global string;
 global estado;

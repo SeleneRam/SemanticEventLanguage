@@ -1,3 +1,5 @@
+% -*- octave -*-
+% This function validates the uniqueness of a variable name
 function fnValidarV(nombrevar)
 global ts;
 global pr;
@@ -8,7 +10,7 @@ global linea;
                 error('Error: similar name -%s-  line: %d', nombrevar, linea);
             end
         end
-        
+
         for z=1:length(ts)
             xx=(ts(z).id);
             if(strcmpi(nombrevar,xx))

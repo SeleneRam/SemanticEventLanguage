@@ -1,3 +1,6 @@
+% -*- octave -*-
+% This script analyzes the semantics of the given script, ensuring that the
+% appropriate variables are created and that the final statements have valid values.
 function tipo=fnValidarValor( nombrevar)
 global estados;
 global string;

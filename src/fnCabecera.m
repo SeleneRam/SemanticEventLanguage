@@ -1,3 +1,7 @@
+% -*- octave -*-
+% This function checks if the header part of the program is correct
+% and returns the content as a string along with the remaining text to be analyzed
+% and the video name.
 function [programa, videoname]=fnCabecera(programa)
 global pr;
 global nombre;
@@ -65,7 +69,6 @@ end
 videoname=texto;
 [token,~,~]=parse(programa);
 if(strcmpi(token,'%'))
-    %disp('string de valor guardarlo con la etiqueta');
     programa=ValorAccion(programa, 1);
 end
 end

@@ -1,3 +1,5 @@
+% -*- octave -*-
+% This function determines the type of a statement of the motion primitives
 function tipo=fnTipoSentencia(nombrevar)
 global primitivas;
 global ciclos;
@@ -23,6 +25,6 @@ end
 if (x~=1)
      error('Error: Invalid name -%s-  line: %d', nombrevar, linea);
 end
-    
+
 
 end

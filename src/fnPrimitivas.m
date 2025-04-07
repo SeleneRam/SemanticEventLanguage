@@ -1,3 +1,7 @@
+% -*- octave -*-
+% This function checks if the syntax of a statement is correct
+% It requests the script to be analyzed and returns the remaining part of the script to be analyzed.
+
 function programa = fnPrimitivas(tokenTipo, programa)
   global linea;
   global primitivas;

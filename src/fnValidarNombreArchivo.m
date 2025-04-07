@@ -1,3 +1,7 @@
+% -*- octave -*-
+% This function validates the name of a file and returns the name along with
+% the remaining part of the script that needs to be analyzed.
+
 function [programa, valoresvar]=fnValidarNombreArchivo(programa)
 global ts;
 [nombre, tipo,programa]=parse(programa);
